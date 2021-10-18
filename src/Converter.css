@@ -1,0 +1,130 @@
+.converter {
+    font-size: 1em;
+    text-rendering: optimizeLegibility;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    text-align: center;
+}
+
+.inputs {
+    text-align: center;
+}
+
+.floatInput {
+    font-size: 18px;
+    margin: 8px;
+}
+
+.binaryInput {
+    width: 380px;
+    font-family: monospace;
+    font-size: 18px;
+    margin: 8px;
+    text-align: center;
+}
+
+.boxes {
+    display: inline-block;
+}
+
+.digits {
+    display: grid;
+    grid-template-columns: 32px repeat(32, 18px);
+}
+
+.digit {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.headSpace {
+    grid-column: span 10;
+    grid-row: row 1;
+}
+
+.fractionHeader {
+    height: 32px;
+    grid-row: row 1;
+}
+
+.spacer {
+    grid-row: row 2;
+}
+
+.sign {
+    background-color: rgb(168, 168, 255);
+    grid-row: row 2;
+}
+
+.exponent {
+    background-color: rgb(168, 255, 168);
+    grid-row: row 2;
+}
+
+.fraction {
+    background-color: rgb(255, 168, 168);
+    grid-row: row 2;
+    cursor: pointer;
+}
+
+.fraction:hover {
+    background-color: rgb(153, 56, 56);
+    color: white;
+}
+
+.signLabel {
+    border-bottom: 1px solid #444;
+    border-right: 1px solid #444;
+    grid-column: span 2;
+    grid-row: row 3;
+}
+
+.exponentLabel {
+    border-bottom: 1px solid #444;
+    border-right: 1px solid #444;
+    grid-column: span 8;
+    grid-row: row 3;
+}
+
+.fractionLabel {
+    border-bottom: 1px solid #444;
+    border-right: 1px solid #444;
+    grid-column: span 23;
+    grid-row: row 3;
+}
+
+
+.signValue {
+    grid-column: span 2;
+    grid-row: row 4;
+}
+
+.exponentValue {
+    grid-column: span 8;
+    grid-row: row 4;
+}
+
+.fractionValue {
+    grid-column: span 23;
+    grid-row: row 4;
+}
+
+.calculation {
+    color: #554;
+}
+
+.finalCalculation {
+    margin-top: 32px;
+    font-size: 20px;
+}
+
+.signCalculated {
+    color: rgb(80, 80, 180);
+}
+
+.exponentCalculated {
+    color: rgb(20, 180, 20);
+}
+
+.fractionCalculated {
+    color: rgb(200, 80, 80);
+}
